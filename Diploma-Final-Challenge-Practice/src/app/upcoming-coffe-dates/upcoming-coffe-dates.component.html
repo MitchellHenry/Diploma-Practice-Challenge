@@ -1,0 +1,14 @@
+<table>
+    <tr>
+        <th>Booking ID</th>
+        <th>Date</th>
+        <th>Venue</th>
+        <th>Booker</th>
+    </tr>
+    <tr *ngFor="let CoffeeDate of dataservice.FutureDates">
+        <td>{{CoffeeDate.id}}</td>
+        <td>{{CoffeeDate.date |date:'short'}}</td>
+        <td>{{CoffeeDate.venue}}</td>
+        <td>{{CoffeeDate.booker}}</td>
+    </tr>
+</table>
